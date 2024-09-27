@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
 :root {
     --cor-de-fundo: #F5F5F5;
@@ -32,17 +35,33 @@ a {
     background-color: var(--cor-de-fundo-menu);
 }
 
+.cabecalho__esquerdo {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+}
+
 .cabecalho__logo {
+    height: 24px;
+    width: 24px;
     max-width: 80px; /* Ajuste para telas pequenas */
 }
 
 .cabecalho__titulo {
     font-size: 1.2rem;
     text-align: center;
+    font-family: "Raleway", sans-serif; 
+    font-weight: 700;
+    color: #464646;
 }
 
 .navegacao__lista {
     display: none;
+    font-family: "Raleway", sans-serif; 
+    font-weight: 500;
+    color: #464646;
+    align-items: center;
 }
 
 .navegacao__elemento a {
@@ -50,6 +69,35 @@ a {
 }
 /* ------------------------------ Seção Apresentação ------------------------------*/
 
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.apresentacao__foto{ 
+    max-width: 100px;
+}
+
+.apresentacao__titulo {
+    color: #464646;
+    font-size: 22px;
+}
+
+.apresentacao__subtitulo {
+    font-size: 14px;
+    color: #464646;
+}
+
+.redes {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    color: #000000;
+    padding-left: 0px;
+}
 
 /* ------------------------------ Seção Sobre mim ----------------------------------*/
 
@@ -70,6 +118,9 @@ a {
 
 /* Tablets e telas maiores */
 @media (min-width: 768px) {
+
+    /* MENU */
+
     .cabecalho {
         flex-direction: row;
         justify-content: space-between;
@@ -94,16 +145,69 @@ a {
     .navegacao__elemento a {
         font-size: 1rem;
     }
+
+    .navegacao__elemento:nth-child(6){
+        font-weight: 700;
+    }
+
+    /* APRESENTAÇÃO */
+
+    .apresentacao {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 15px;
+    }
+
+    .apresentacao__foto{ 
+        max-width: 150px;
+    }
+
+    .apresentacao__subtitulo {
+        font-size: 16px;
+    }
+
 }
 
 /* Telas grandes */
 @media (min-width: 1024px) {
     /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    
+    /* MENU */
+
     .cabecalho__titulo {
-        font-size: 1.8rem;
+        font-size: 16px;
     }
 
     .navegacao__elemento a {
-        font-size: 1.1rem;
+        font-size: 16px;
+    }
+
+    .navegacao__elemento:nth-child(6){
+        font-weight: 700;
+    }
+
+    /* APRESENTAÇÃO */
+
+    .apresentacao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .apresentacao__foto {
+        max-width: 370px;
+    }
+
+    .apresentacao__titulo {
+        font-size: 50px;
+    }
+
+    .apresentacao__subtitulo {
+        font-size: 22px;
+    }
+
+    .redes__elemento {
+        font-size: 16px;
     }
 }
