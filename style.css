@@ -123,6 +123,7 @@ a {
 .habilidades__titulo {
     display: flex;
     justify-content: center;
+    color: #464646;
 }
 
 .habilidades__lista {
@@ -133,6 +134,7 @@ a {
     justify-content: flex-start;
     padding-top: 50px;
     padding-bottom: 50px;
+    color: #464646;
 }
 
 .habilidades__elemento {
@@ -147,6 +149,7 @@ a {
 .hobbies__titulo {
     display: flex;
     justify-content: center;
+    color: #464646;
 }
 
 .hobbies__lista {
@@ -157,6 +160,7 @@ a {
     justify-content: flex-start;
     padding-top: 50px;
     padding-bottom: 50px;
+    color: #464646;
 }
 
 .hobbies__elemento {
@@ -171,11 +175,13 @@ a {
 .formacao {
     background-color: #EAF2FD;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .formacao__titulo {
     display: flex;
     justify-content: center;
+    color: #464646;
 }
 
 .formacao__lista {
@@ -185,6 +191,7 @@ a {
     padding-top: 30px;
     padding-bottom: 30px;
     row-gap: 30px;
+    color: #464646;
 }
 
 .formacao__elemento {
@@ -203,8 +210,115 @@ a {
     margin: 0px;
 }
 
+/*------------------------------ Seção de Experiência ---------------------------------*/
+
+.projetos {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.projetos__titulo {
+    display: flex;
+    justify-content: center;
+    color: #464646;
+}
+
+.projetos__conteiner {
+    padding: 5px 40px 0px 40px;
+    text-align: justify;
+    color: #464646;
+}
+
+.projetos__nome {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.projetos__descricao {
+    margin-top: 5px;
+}
+
 /*------------------------------ Seção de Contato ---------------------------------*/
 
+.contato {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #EAF2FD;
+}
+
+.contato__titulo {
+    padding: 0px 40px 0px 40px;
+    color: #464646;
+}
+
+.contato__descricao1,
+.contato__descricao2 {
+    padding: 5px 40px 0px 40px;
+    text-align: justify;
+    color: #464646;
+}
+
+.contato__descricao1 {
+    margin-bottom: 5px;
+}
+
+.contato__descricao2 {
+    margin-top: 5px;
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 40px 0px 40px;
+    row-gap: 15px;
+}
+
+.contato__campo {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contato__campo::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.contato__campo:focus {
+    border-color: #6a9df8;
+    outline: none;
+} 
+
+.contato__botao {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    align-self: left;
+    width: 200px;
+}
+
+.contato__botao:hover {
+    background-color: #357ae8;
+}
+
+/* ------------------------------ Footer ---------------------------------------*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
 /* ------------------------------ Responsividade ---------------------------------------*/
 
